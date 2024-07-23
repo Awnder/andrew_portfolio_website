@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Andrew Shiroma | Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="images/as_icon.png" type="image/icon type">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    
+    <link rel="icon" href="assets/images/as_icon.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/a5e0e47a32.js" crossorigin="anonymous"></script>
 </head>
 <body class="fade-in">
     <nav>
@@ -17,25 +19,34 @@
         <div>
             <ul>
                 <li><a href="#intro" class="current-anchor">ABOUT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="">RESUME</a></li>
+                <li><a href="#arrowdown">PORTFOLIO</a></li>
+                <li><a href="documents/CS Resume Andrew Shiroma.pdf" download>RESUME</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="intro">
-        <div class="intro-text">
+        <div id="intro-text">
             <h1>Hi, I'm Andrew</h1>
             <h2>An aspiring <span class="text-fancy">computer scientist</span></h2>
             <p>I dabble in <span class="text-fancy">hmtl</span>, <span class="text-fancy">css</span>, <span class="text-fancy">python</span>, and <span class="text-fancy">sql</span></p>
-            <a class="button">RESUME</a>
+            <div id="intro-icons">
+                <div>
+                    <a href="assets/documents/CS Resume Andrew Shiroma.pdf" class="button" download>RESUME</a>
+                </div>
+                <div class="link-icons">
+                    <a href="https://www.github.com/Awnder" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/andrewshiroma" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="mailto:amshiroma.business@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
         </div>
         <div>
-            <img src="images/self.jpg" alt="Headshot of Andrew Shiroma" id="intro-image">            
+            <img src="assets/images/self.jpg" alt="Headshot of Andrew Shiroma" id="intro-image">            
         </div>
     </section>
 
-    <img src="images/arrowdown.png" id="arrowdown">
+    <img src="assets/images/arrowdown.png" id="arrowdown" class="float">
 
     <h1 class="section-title">Portfolio</h1>
     <section id="portfolio">
@@ -44,7 +55,7 @@
                 <h2>lorum ipsum</h2>
                 <p>adfasdfasdfasdf</p>
             </div>
-            <img src="images/self.jpg" class="portfolio-img">
+            <img src="assets/images/self.jpg" class="portfolio-img">
         </div>
         
         <div class="portfolio-item">
@@ -52,15 +63,18 @@
                 <h2>lorum ipsum</h2>
                 <p>adfasdfasdfasdf</p>
             </div>
-            <img src="images/self.jpg" class="portfolio-img">
+            <img src="assets/images/self.jpg" class="portfolio-img">
         </div>
     </section>
     
-    <footer class="test">
-        <img src="images/linkedin.png">
-        
+    <footer>
+        <a href="https://www.github.com/Awnder" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+        <p>|</p>
+        <a href="https://www.linkedin.com/in/andrewshiroma" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <p>|</p>
+        <a href="mailto:amshiroma.business@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
     </footer>
-    <script src="script.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
 
