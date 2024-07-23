@@ -123,7 +123,7 @@ a.current-anchor:hover {
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
-
+/*
 .reveal-text-line {
     overflow: hidden;
     border-right: 4px solid #add8e6;
@@ -155,3 +155,5 @@ a.current-anchor:hover {
     60% { width: 43% }
     100% { width: 43% }
 }
+
+*/
