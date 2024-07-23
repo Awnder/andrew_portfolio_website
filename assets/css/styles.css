@@ -14,7 +14,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
     margin: 20px auto;
     width: 80%;
@@ -120,13 +119,16 @@ a.current-anchor:hover {
     display: block;
     width: 115px;
     height: 30px;
-    background: #4E9CAF;
     text-align: center;
     border: 0.7px solid white;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     line-height: 30px;
+}
+
+.button:hover {
+    border: 0.7px solid #add8e6;
 }
 
 #arrowdown {
