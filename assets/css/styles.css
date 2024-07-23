@@ -151,20 +151,28 @@ a.current-anchor:hover {
 }
 
 .portfolio-text {
-    width: 40%;
+    width: 30%;
     padding: 10% 0;
     margin: auto;
     text-align: center;
     background-color: #2a2e30;
 }
 
-.portfolio-text h2, .portfolio-text p {
+.portfolio-text h2, .portfolio-text p, .portfolio-text a {
     background-color: #2a2e30;
 }
 
+.portfolio-text h2, .portfolio-text p {
+    padding: 0 15px;
+}
+
+.portfolio-text h2 {
+    color: #add8e6;
+}
+
 .portfolio-img {
-    width: 25vw;
-    max-width: 400px;
+    width: 50vw;
+    max-width: 800px;
     height: auto;
     margin: auto;
 }
