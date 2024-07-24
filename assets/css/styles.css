@@ -98,15 +98,18 @@ a:hover.reverse-color {
     height: 60vh;
 }
 
-#intro-image {
-    width: 25vw;
-    max-width: 400px;
-    height: auto;
-    border-radius: 50%;
-}
-
 #intro-text {
     margin-right: 10%;
+}
+
+#intro-hi {
+    margin: 20px 0;
+    font-size: 50px;
+}
+
+#intro-title {
+    margin: 15px 0;
+    font-size: 25px;
 }
 
 #intro-icons {
@@ -114,6 +117,13 @@ a:hover.reverse-color {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#intro-image {
+    width: 25vw;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .link-icons a {
