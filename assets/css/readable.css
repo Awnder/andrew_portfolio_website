@@ -179,7 +179,7 @@ nav li {
 }
 
 /* Medium Screens (Tablet) */
-@media only screen and (min-width: 577px) and (max-width: 785px) {
+@media only screen and (min-width: 577px) and (max-width: 786px) {
     #intro {
         justify-content: space-around;
         align-items: center;
