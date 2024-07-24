@@ -91,25 +91,125 @@ a:hover.reverse-color {
     color: white;
 }
 
-#intro {
-    justify-content: space-around;
-    align-items: center;
-    margin: 10vh auto;
-    height: 60vh;
+/* Hello font-size for XLarge Screens (Desktop) */
+@media only screen and (min-width: 1025px) {
+    #intro-hi {
+        font-size: 60px;
+    }
 }
 
-#intro-text {
-    margin-right: 10%;
+/* Hello font-size for Large and Medium Screens (Desktop and Tablet) */
+@media only screen and (min-width: 786px) and (max-width: 1024px) {
+    #intro-hi {
+        font-size: 50px;
+    }
 }
 
-#intro-hi {
-    margin: 20px 0;
-    font-size: 50px;
+/* Large and Medium Screens (Desktop and Tablet) */
+@media only screen and (min-width: 786px) {
+    #intro {
+        justify-content: space-around;
+        align-items: center;
+        margin: 10vh auto;
+        height: 60vh;
+    }
+
+    #intro-image {
+        width: 25vw;
+        max-width: 400px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #intro-text {
+        margin-right: 5%;
+    }
 }
 
-#intro-title {
-    margin: 15px 0;
-    font-size: 25px;
+/* Medium Screens (Tablet) */
+@media only screen and (min-width: 577px) and (max-width: 785px) {
+    #intro {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 10vh auto;
+        height: 60vh;
+    }
+
+    #intro-image {
+        width: 50vw;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #intro-hi {
+        font-size: 40px;
+    }
+}
+
+/* Small Screens (Small Tablets) */
+@media only screen and (min-width: 459px) and (max-width: 576px) {
+    #intro {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 10vh auto;
+        height: 60vh;
+    }
+
+    #intro-image {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #intro-hi {
+        font-size: 40px;
+    }
+}
+
+/* Title font-size for All Screens Until Small Screens (Small Mobile) */
+@media only screen and (min-width: 459px) {
+    #intro-title {
+        font-size: 20px;
+    }  
+}
+
+/* Small Screens (Small Mobile) */
+@media only screen and (max-width: 458px) {
+    p {
+        font-size: 15px;
+    }
+
+    #intro {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 10vh auto;
+        height: 60vh;
+    }
+
+    #intro-image {
+        width: 90%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    #intro-hi {
+        font-size: 35px;
+    }
+
+    #intro-title {
+        font-size: 17px;
+    }
+
+    #intro-icons .link-icons a {
+        margin: 0 7px;
+    }
+
+    #intro-icons .link-icons a:last-of-type {
+        margin: 0 0 0 7px;
+    }
 }
 
 #intro-icons {
@@ -117,13 +217,6 @@ a:hover.reverse-color {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-#intro-image {
-    width: 25vw;
-    max-width: 400px;
-    height: auto;
-    border-radius: 50%;
 }
 
 .link-icons a {
@@ -156,26 +249,67 @@ a:hover.reverse-color {
     margin: auto;
 }
 
-#portfolio {
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: auto;
+/* Large Screens (Desktops) */
+@media only screen and (min-width: 1025px) {
+    #portfolio {
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .portfolio-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 5vh auto;
+    }
+
+    .portfolio-text {
+        width: 30%;
+        padding: 10% 0;
+        margin: auto;
+        text-align: center;
+        background-color: #2a2e30;
+    }
+
+    .portfolio-img {
+        width: 50vw;
+        max-width: 800px;
+        height: auto;
+    }
 }
 
-.portfolio-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 5vh auto;
-}
+/* All Small Screens (Tablets and Mobile) */
+@media only screen and (max-width: 1024px) {
+    #portfolio {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 5vh auto;
+    }
 
-.portfolio-text {
-    width: 30%;
-    padding: 10% 0;
-    margin: auto;
-    text-align: center;
-    background-color: #2a2e30;
+    .portfolio-text {
+        width: 100%;
+        padding: 2% 0;
+        margin-bottom: 3vh;
+        text-align: center;
+        background-color: #2a2e30;
+    }
+
+    .portfolio-img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .portfolio-text * {
@@ -195,13 +329,6 @@ a:hover.reverse-color {
     justify-content: center;
     width: 100%;
     margin-top: 15px;
-}
-
-.portfolio-img {
-    width: 50vw;
-    max-width: 800px;
-    height: auto;
-    margin: auto;
 }
 
 footer {
