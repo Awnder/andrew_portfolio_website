@@ -80,7 +80,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: -webkit-sticky; /* Safari */
     top: 0;
     margin: 20px auto;
     width: 80%;
@@ -181,7 +180,7 @@ nav li {
 /* Medium Screens (Tablet) */
 @media only screen and (min-width: 577px) and (max-width: 786px) {
     #intro {
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: column-reverse;
         margin: 10vh auto;
@@ -189,7 +188,7 @@ nav li {
     }
 
     #intro-image {
-        width: 50vw;
+        width: 60%;
         height: auto;
         border-radius: 50%;
     }
@@ -202,7 +201,7 @@ nav li {
 /* Small Screens (Small Tablets) */
 @media only screen and (min-width: 459px) and (max-width: 576px) {
     #intro {
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: column-reverse;
         margin: 10vh auto;
@@ -210,7 +209,7 @@ nav li {
     }
 
     #intro-image {
-        width: 90%;
+        width: 70%;
         height: auto;
         border-radius: 50%;
     }
@@ -234,7 +233,7 @@ nav li {
     }
 
     #intro {
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: column-reverse;
         margin: 10vh auto;
@@ -242,7 +241,7 @@ nav li {
     }
 
     #intro-image {
-        width: 90%;
+        width: 80%;
         height: auto;
         border-radius: 50%;
     }
