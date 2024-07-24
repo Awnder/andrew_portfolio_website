@@ -66,19 +66,28 @@ p {
 a, a:active, a:visited, i {
     text-decoration: none;
     color: inherit;
-    transition: 200ms linear;
+    transition: 150ms linear;
 }
 
-a:hover, i:hover {
+a:hover {
     color: #add8e6;
 }
 
 a.current-anchor {
     color: #add8e6;
-    transition: 200ms linear;
+    transition: 150ms linear;
 }
 
 a.current-anchor:hover {
+    color: white;
+}
+
+a.reverse-color, a:active.reverse-color, a:visited.reverse-color {
+    color: #add8e6;
+    transition: 150ms linear;
+}
+
+a:hover.reverse-color {
     color: white;
 }
 
@@ -139,7 +148,7 @@ a.current-anchor:hover {
 
 #portfolio {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     height: auto;
 }
