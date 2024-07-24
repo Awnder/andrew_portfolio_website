@@ -146,6 +146,7 @@ a.current-anchor:hover {
 
 .portfolio-item {
     display: flex;
+    align-items: center;
     width: 100%;
     margin: 5vh auto;
 }
@@ -158,16 +159,23 @@ a.current-anchor:hover {
     background-color: #2a2e30;
 }
 
-.portfolio-text h2, .portfolio-text p, .portfolio-text a {
+.portfolio-text * {
     background-color: #2a2e30;
 }
 
-.portfolio-text h2, .portfolio-text p {
+.portfolio-text h2, .portfolio-text h3, .portfolio-text p {
     padding: 0 15px;
 }
 
 .portfolio-text h2 {
     color: #add8e6;
+}
+
+.portfolio-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .portfolio-img {
