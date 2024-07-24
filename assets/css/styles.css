@@ -9,35 +9,7 @@
     font-family:'Courier New', Courier, monospace;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: -webkit-sticky; /* Safari */
-    top: 0;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 1600px;
-}
-
-nav h2 {
-    margin: 20px auto;
-}
-
-nav h2 span {
-    transition: 150ms linear;
-}
-
-nav h2:hover span {
-    color: white;
-}
-
-nav li {
-    display: inline;
-    margin: 0 20px;
-    font-size: 17px;
-}
-
+/* --- Generic Styles --- */
 section {
     display: flex;
     margin: auto;
@@ -89,6 +61,86 @@ a.reverse-color, a:active.reverse-color, a:visited.reverse-color {
 
 a:hover.reverse-color {
     color: white;
+}
+
+.text-fancy {
+    color: #add8e6;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+.test {
+    border: 1px solid red;
+}
+
+/* --- Nav Section ---*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1600px;
+}
+
+nav h2 {
+    margin: 20px auto;
+}
+
+nav h2 span {
+    transition: 150ms linear;
+}
+
+nav h2:hover span {
+    color: white;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+    font-size: 17px;
+}
+
+/* --- Intro/Landing Section --- */
+#intro-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-icons a {
+    margin: 0 15px;
+}
+
+.link-icons a:last-of-type {
+    margin: 0 0 0 15px;
+}
+
+.button {
+    display: block;
+    width: 115px;
+    height: 30px;
+    text-align: center;
+    border: 0.7px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.button:hover {
+    border: 0.7px solid #add8e6;
+}
+
+#arrowdown {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 /* Hello font-size for XLarge Screens (Desktop) */
@@ -212,41 +264,24 @@ a:hover.reverse-color {
     }
 }
 
-#intro-icons {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* --- Portfolio Section --- */
+.portfolio-text * {
+    background-color: #2a2e30;
 }
 
-.link-icons a {
-    margin: 0 15px;
+.portfolio-text h2, .portfolio-text h3, .portfolio-text p {
+    padding: 0 15px;
 }
 
-.link-icons a:last-of-type {
-    margin: 0 0 0 15px;
+.portfolio-text h2 {
+    color: #add8e6;
 }
 
-.button {
-    display: block;
-    width: 115px;
-    height: 30px;
-    text-align: center;
-    border: 0.7px solid white;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    line-height: 30px;
-}
-
-.button:hover {
-    border: 0.7px solid #add8e6;
-}
-
-#arrowdown {
+.portfolio-icons {
     display: flex;
     justify-content: center;
-    margin: auto;
+    width: 100%;
+    margin-top: 15px;
 }
 
 /* Large Screens (Desktops) */
@@ -312,25 +347,7 @@ a:hover.reverse-color {
     }
 }
 
-.portfolio-text * {
-    background-color: #2a2e30;
-}
-
-.portfolio-text h2, .portfolio-text h3, .portfolio-text p {
-    padding: 0 15px;
-}
-
-.portfolio-text h2 {
-    color: #add8e6;
-}
-
-.portfolio-icons {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 15px;
-}
-
+/* --- Footer Section --- */
 footer {
     display: flex;
     justify-content: center;
@@ -341,31 +358,6 @@ footer {
 
 footer p {
     margin: 0 15px 0 15px;
-}
-
-/* --- helpful tools --- */
-.text-fancy {
-    color: #add8e6;
-}
-
-.no-bullets {
-    list-style-type: none;
-}
-
-.inline {
-    display: inline;
-}
-
-.visible {
-    opacity: 1;
-}
-
-.invisible {
-    opacity: 0;
-}
-
-.test {
-    border: 1px solid red;
 }
 
 /* --- animations --- */
