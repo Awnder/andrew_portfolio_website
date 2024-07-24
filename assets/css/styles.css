@@ -116,11 +116,11 @@ a:hover.reverse-color {
     justify-content: space-between;
 }
 
-#intro-icons .link-icons a {
+.link-icons a {
     margin: 0 15px;
 }
 
-#intro-icons .link-icons a:last-of-type {
+.link-icons a:last-of-type {
     margin: 0 0 0 15px;
 }
 
