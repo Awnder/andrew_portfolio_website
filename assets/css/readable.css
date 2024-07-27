@@ -306,6 +306,7 @@ nav li {
         margin: auto;
         text-align: center;
         background-color: #2a2e30;
+        box-shadow: 0 0 20px 20px #add8e6;
     }
 
     .portfolio-img {
@@ -339,6 +340,7 @@ nav li {
         margin-bottom: 3vh;
         text-align: center;
         background-color: #2a2e30;
+        box-shadow: 0 0 20px 20px #add8e6;
     }
 
     .portfolio-img {
