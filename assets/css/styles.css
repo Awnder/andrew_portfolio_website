@@ -71,6 +71,10 @@ a:hover.reverse-color {
     list-style-type: none;
 }
 
+.absolute {
+    position: absolute;
+}
+
 .test {
     border: 1px solid red;
 }
@@ -178,8 +182,8 @@ nav li {
     }
 }
 
-/* Medium Screens (Tablet) */
-@media only screen and (min-width: 577px) and (max-width: 785px) {
+/* Intro for Medium and Small Screens (Tablet and Mobile) */
+@media only screen and (min-width: 458px) and (max-width: 785px) {
     #intro {
         justify-content: space-around;
         align-items: center;
@@ -187,7 +191,10 @@ nav li {
         margin: 10vh auto;
         height: 60vh;
     }
+}
 
+/* Medium Screens (Tablet) */
+@media only screen and (min-width: 577px) and (max-width: 785px) {
     #intro-image {
         width: 50vw;
         height: auto;
@@ -201,14 +208,6 @@ nav li {
 
 /* Small Screens (Small Tablets) */
 @media only screen and (min-width: 459px) and (max-width: 576px) {
-    #intro {
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column-reverse;
-        margin: 10vh auto;
-        height: 60vh;
-    }
-
     #intro-image {
         width: 90%;
         height: auto;
@@ -231,14 +230,6 @@ nav li {
 @media only screen and (max-width: 458px) {
     p {
         font-size: 15px;
-    }
-
-    #intro {
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column-reverse;
-        margin: 10vh auto;
-        height: 60vh;
     }
 
     #intro-image {
@@ -306,6 +297,7 @@ nav li {
         margin: auto;
         text-align: center;
         background-color: #2a2e30;
+        box-shadow: 0 0 20px 10px #add8e6
     }
 
     .portfolio-img {
@@ -315,7 +307,7 @@ nav li {
     }
 }
 
-/* All Small Screens (Tablets and Mobile) */
+/* All Screens Smaller than Desktops (Tablets and Mobile) */
 @media only screen and (max-width: 1024px) {
     #portfolio {
         align-items: center;
@@ -339,6 +331,7 @@ nav li {
         margin-bottom: 3vh;
         text-align: center;
         background-color: #2a2e30;
+        box-shadow: 0 0 20px 20px #add8e6
     }
 
     .portfolio-img {
@@ -361,6 +354,10 @@ footer p {
 }
 
 /* --- animations --- */
+.invisible-for-load {
+    opacity: 0;
+}
+
 .fade-in {
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
